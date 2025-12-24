@@ -4,56 +4,61 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lauf Coaching – Wikant Tchanra</title>
-  <meta name="description" content="Lauf Coaching mit Wikant Tchanra – individuell, klar, effektiv." />
+  <meta name="description" content="Lauf Coaching mit Wikant Tchanra – individuell, klar, effektiv. Online & vor Ort." />
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
+  <!-- Entwicklungsbanner -->
   <div class="devbar">Diese Seite ist derzeit in Entwicklung.</div>
 
-  <header class="wrap header">
+  <!-- Header -->
+  <header class="wrap header" id="top">
     <div class="brand">🏃‍♂️ Lauf Coaching <span>Wikant Tchanra</span></div>
-    <a class="btn" href="#kontakt">Kontakt</a>
+    <a class="btn primary" href="#kontakt">Kontakt</a>
   </header>
 
   <main class="wrap">
+
+    <!-- HERO -->
     <section class="hero">
+      <p class="tag">Online Coaching • Personal Training • Rhein-Main</p>
       <h1>Trainiere smarter. Laufe besser.</h1>
       <p>Individuelle Trainingspläne, Technik-Check und klare Struktur – online oder vor Ort.</p>
+
       <div class="actions">
         <a class="btn primary" href="#kontakt">Kostenloses Erstgespräch</a>
         <a class="btn ghost" href="#angebote">Angebote</a>
+        <a class="btn ghost" href="#marathons">Marathons</a>
       </div>
     </section>
 
-    <section id="angebote" class="box">
+    <!-- ANGEBOTE -->
+    <section class="box" id="angebote">
       <h2>Angebote</h2>
-      <ul>
-        <li><strong>Online Coaching</strong> – Plan + Feedback</li>
-        <li><strong>Personal Training</strong> – Technik & Tempo</li>
-        <li><strong>Trainingsplan “Solo”</strong> – Plan ohne Betreuung</li>
-      </ul>
-    </section>
 
-    <section class="box">
-      <h2>Über mich</h2>
-      <p>Ich bin <strong>Wikant Tchanra</strong>. Mein Coaching ist strukturiert, realistisch und messbar.</p>
-    </section>
+      <div class="cards">
+        <div class="card">
+          <h3>Online Coaching</h3>
+          <p>Individueller Plan + wöchentliches Feedback. Flexibel und effektiv.</p>
+        </div>
 
-    <section id="kontakt" class="box">
-      <h2>Kontakt</h2>
-      <p>Schreib mir dein Ziel + wie oft du pro Woche laufen kannst.</p>
+        <div class="card">
+          <h3>Personal Training</h3>
+          <p>1:1 Lauftechnik, Tempo, Kraft & Mobility – vor Ort oder nach Absprache.</p>
+        </div>
 
-      <!-- Ersetze die Platzhalter -->
-      <div class="contact">
-        <a class="btn primary" href="mailto:info@deinedomain.de?subject=Erstgespräch%20Lauf%20Coaching">E-Mail</a>
-        <a class="btn ghost" href="https://wa.me/49123456789" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="card">
+          <h3>Trainingsplan “Solo”</h3>
+          <p>4–16 Wochen Plan ohne Betreuung (optional 1 Feedback-Call).</p>
+        </div>
       </div>
-
-      <p class="small">© <span id="year"></span> Lauf Coaching – Wikant Tchanra</p>
     </section>
-  </main>
 
-  <script src="./main.js"></script>
-</body>
-</html>
+    <!-- ABLAUF -->
+    <section class="box" id="ablauf">
+      <h2>So läuft’s ab</h2>
+      <ol class="steps">
+        <li><strong>Erstgespräch:</strong> Ziel + Alltag + aktueller Stand</li>
+        <li><strong>Plan:</strong> Struktur für deine Woche (realistisch planbar)</li>
+        <li><strong>Feedback:</strong> Anpassung & messbarer Forts
