@@ -1,0 +1,54 @@
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:#0b0f14;
+  color:#e9eef7;
+}
+.wrap{width:min(920px, 92vw); margin:0 auto}
+.devbar{
+  position:sticky; top:0; z-index:10;
+  padding:10px 12px;
+  background:#101a25;
+  border-bottom:1px solid rgba(255,255,255,.12);
+  text-align:center;
+  font-weight:600;
+}
+.header{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:14px 0;
+}
+.brand{font-weight:800}
+.brand span{font-weight:600; color:rgba(233,238,247,.75); margin-left:8px}
+.hero{padding:26px 0 10px}
+.hero h1{margin:0 0 10px; font-size:clamp(1.8rem, 5vw, 2.6rem)}
+.hero p{margin:0 0 14px; color:rgba(233,238,247,.78); line-height:1.5}
+.actions{display:flex; gap:10px; flex-wrap:wrap}
+
+.box{
+  margin:14px 0;
+  padding:16px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;
+  background:rgba(255,255,255,.03);
+}
+h2{margin:0 0 10px}
+ul{margin:0; padding-left:18px; line-height:1.7}
+.small{color:rgba(233,238,247,.6); font-size:.9rem}
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  text-decoration:none;
+  color:#e9eef7;
+  font-weight:700;
+}
+.btn.primary{
+  background:linear-gradient(90deg,#7cf2c8,#7aa7ff);
+  color:#071015;
+  border:0;
+}
+.btn.ghost{background:rgba(255,255,255,.03)}
+.contact{display:flex; gap:10px; flex-wrap:wrap}
