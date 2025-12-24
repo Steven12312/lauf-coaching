@@ -1,54 +1,131 @@
-*{box-sizing:border-box}
-body{
-  margin:0;
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background:#0b0f14;
-  color:#e9eef7;
+  background: linear-gradient(180deg, #eef6ff, #ffffff);
+  color: #0f2a44;
 }
-.wrap{width:min(920px, 92vw); margin:0 auto}
-.devbar{
-  position:sticky; top:0; z-index:10;
-  padding:10px 12px;
-  background:#101a25;
-  border-bottom:1px solid rgba(255,255,255,.12);
-  text-align:center;
-  font-weight:600;
-}
-.header{
-  display:flex; justify-content:space-between; align-items:center;
-  padding:14px 0;
-}
-.brand{font-weight:800}
-.brand span{font-weight:600; color:rgba(233,238,247,.75); margin-left:8px}
-.hero{padding:26px 0 10px}
-.hero h1{margin:0 0 10px; font-size:clamp(1.8rem, 5vw, 2.6rem)}
-.hero p{margin:0 0 14px; color:rgba(233,238,247,.78); line-height:1.5}
-.actions{display:flex; gap:10px; flex-wrap:wrap}
 
-.box{
-  margin:14px 0;
-  padding:16px;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:14px;
-  background:rgba(255,255,255,.03);
+/* Layout */
+.wrap {
+  width: min(920px, 92vw);
+  margin: 0 auto;
 }
-h2{margin:0 0 10px}
-ul{margin:0; padding-left:18px; line-height:1.7}
-.small{color:rgba(233,238,247,.6); font-size:.9rem}
 
-.btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:10px 14px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.14);
-  text-decoration:none;
-  color:#e9eef7;
-  font-weight:700;
+/* Entwicklungsbanner */
+.devbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10px 12px;
+  background: linear-gradient(90deg, #38bdf8, #22d3ee);
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
 }
-.btn.primary{
-  background:linear-gradient(90deg,#7cf2c8,#7aa7ff);
-  color:#071015;
-  border:0;
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
 }
-.btn.ghost{background:rgba(255,255,255,.03)}
-.contact{display:flex; gap:10px; flex-wrap:wrap}
+
+.brand {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.brand span {
+  font-weight: 600;
+  color: #4b6b88;
+  margin-left: 6px;
+}
+
+/* Hero */
+.hero {
+  padding: 32px 0 16px;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  color: #0b3558;
+}
+
+.hero p {
+  margin: 0 0 18px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #355f85;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Boxen / Sections */
+.box {
+  margin: 18px 0;
+  padding: 18px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 42, 68, 0.08);
+}
+
+h2 {
+  margin: 0 0 10px;
+  color: #0b3558;
+}
+
+/* Listen */
+ul {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.8;
+  color: #355f85;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Haupt-CTA */
+.btn.primary {
+  background: linear-gradient(90deg, #38bdf8, #22d3ee);
+  color: #00324f;
+}
+
+/* Sekundär */
+.btn.ghost {
+  background: #e6f4ff;
+  color: #0b3558;
+}
+
+/* Kontakt */
+.contact {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Footer Text */
+.small {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #6b8aa6;
+}
